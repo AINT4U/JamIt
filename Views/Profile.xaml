@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Profile"
+             BackgroundColor="#3F3F3F"
+             x:Class="JamIT.Views.Profile"
+             >
+    <VerticalStackLayout>
+
+        <Image Source="circle.png" WidthRequest="45" HeightRequest="45" HorizontalOptions="End" Margin="10, 10, 10, -20" />
+
+
+        <Label
+                Text="Profile"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="45"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"/>
+
+        <Image Source="circle.png" WidthRequest="60" HeightRequest="60" HorizontalOptions="Center" Margin="10" />
+
+        <FlexLayout JustifyContent="Center" FlowDirection="LeftToRight" Margin="6">
+            <Label FlexLayout.AlignSelf="Start" FontAttributes="Bold" Padding="100, 0" FontSize="17">Firstname:</Label>
+            <Label FlexLayout.AlignSelf="End" Padding="100, 0" FontSize="17">John</Label>
+        </FlexLayout>
+
+        <FlexLayout JustifyContent="Center" FlowDirection="LeftToRight" Margin="6">
+            <Label FlexLayout.AlignSelf="Start" FontAttributes="Bold" Padding="100, 0" FontSize="17">Lastname:</Label>
+            <Label FlexLayout.AlignSelf="End" Padding="100, 0" FontSize="17">Doe</Label>
+        </FlexLayout>
+
+        <FlexLayout JustifyContent="Center" FlowDirection="LeftToRight" Margin="6">
+            <Label FlexLayout.AlignSelf="Start" FontAttributes="Bold" Padding="43, 0" FontSize="17">Artist Name:</Label>
+            <Label FlexLayout.AlignSelf="End" Padding="43, 0" FontSize="17">Izzie Rizzie Lizzie</Label>
+        </FlexLayout>
+
+        <FlexLayout JustifyContent="Center" FlowDirection="LeftToRight" Margin="6">
+            <Label FlexLayout.AlignSelf="Start" FontAttributes="Bold" Padding="74, 0" FontSize="17">Number of Songs:</Label>
+            <Label FlexLayout.AlignSelf="End" Padding="74, 0" FontSize="17">10</Label>
+        </FlexLayout>
+
+        <FlexLayout JustifyContent="Center" FlowDirection="LeftToRight" Margin="6">
+            <Label FlexLayout.AlignSelf="Start" FontAttributes="Bold" Padding="74, 0" FontSize="17">Number of Albums:</Label>
+            <Label FlexLayout.AlignSelf="End" Padding="74, 0" FontSize="17">1</Label>
+        </FlexLayout>
+
+        <Label FontAttributes="Bold" FontSize="17" Margin="0, 30, 0,0" HorizontalOptions="Center">Information-Text:</Label>
+        <Label WidthRequest="340">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</Label>
+
+
+    </VerticalStackLayout>
+</ContentPage>

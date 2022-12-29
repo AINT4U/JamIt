@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="Jam_It_.Views.DiscoverPage" BackgroundColor="#3F3F3F"
+             Title="Discover">
+
+    <ScrollView>
+
+            <!--<ImageButton Source="circle.png" WidthRequest="40" CornerRadius="100" HeightRequest="40" HorizontalOptions="End" Margin="10, 10, 10, -20" Clicked="OnImageButtonClicked"/>-->
+
+            <FlexLayout>
+                <Entry Placeholder="Search..." WidthRequest="350" HeightRequest="20" HorizontalOptions="Center" VerticalOptions="Start" Margin="5"/>
+                <Button Text="Search" WidthRequest="100"  HeightRequest="20" HorizontalOptions="Center" VerticalOptions="Start" Margin="5"/>
+            </FlexLayout>
+        
+    </ScrollView>
+
+    
+
+</ContentPage>        

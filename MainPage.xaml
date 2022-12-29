@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JamIT.MainPage" BackgroundColor="#3F3F3F">
+
+    <ScrollView>
+        
+        <VerticalStackLayout
+            Spacing="25"
+            VerticalOptions="Start">
+
+            <ImageButton Source="circle.png" WidthRequest="40" CornerRadius="100" HeightRequest="40" HorizontalOptions="End" Margin="10, 10, 10, -20" Clicked="OnImageButtonClicked"/>
+
+
+            <Image Source="jam_it_logo.png"
+                   WidthRequest="250"
+                   HeightRequest="250"
+                   HorizontalOptions="Center"/>
+
+            <Label
+                Text="Brand New"
+                FontFamily="OpenSans-Regular"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="30"
+                Padding="10, 0"
+                FontAttributes="Bold"
+                HorizontalOptions="Start" Margin="0, -20"/>
+
+            <ScrollView HorizontalScrollBarVisibility="Always" Orientation="Both">
+                <HorizontalStackLayout>
+                    <Frame BackgroundColor="#FF5C00" BorderColor="#FF5C00" WidthRequest="300" HeightRequest="400" Margin="10, 10" CornerRadius="0">
+
+                        <Grid Grid.Row="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="100"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="20"/>
+
+                            </Grid.RowDefinitions>
+                            <Image Source="placeholder.png"
+                                        WidthRequest="100"
+                                        HeightRequest="100"
+                                        HorizontalOptions="Center" Grid.Row="0"/>
+
+                            <Label Text="Album 1" FontAttributes="Bold" FontSize="20" Grid.Row="1" />
+                            <Label Text="Artist Name" Grid.Row="2" />
+                            <Line BackgroundColor="White" Grid.Row="3" HeightRequest="1"/>
+                            <Label Text="Album" Grid.Row="4"/>
+                        </Grid>
+                    </Frame>
+                </HorizontalStackLayout>
+            </ScrollView>
+
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

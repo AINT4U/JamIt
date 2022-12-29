@@ -1,0 +1,83 @@
+is_global = true
+build_property.TargetFramework = net7.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = JamIT
+build_property.ProjectDir = C:\DEV\MAUI\JamIT\
+
+[C:/DEV/MAUI/JamIT/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JamIT.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/DEV/MAUI/JamIT/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JamIT.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/DEV/MAUI/JamIT/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JamIT.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/DEV/MAUI/JamIT/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JamIT.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/DEV/MAUI/JamIT/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JamIT.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/DEV/MAUI/JamIT/Views/AddUpdateAlbumDetail.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JamIT.Views.AddUpdateAlbumDetail.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AddUpdateAlbumDetail.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AddUpdateAlbumDetail.xaml
+
+[C:/DEV/MAUI/JamIT/Views/AddUpdateSongDetail.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JamIT.Views.AddUpdateSongDetail.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AddUpdateSongDetail.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AddUpdateSongDetail.xaml
+
+[C:/DEV/MAUI/JamIT/Views/AlbumDetail.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JamIT.Views.AlbumDetail.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AlbumDetail.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AlbumDetail.xaml
+
+[C:/DEV/MAUI/JamIT/Views/AlbumListPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JamIT.Views.AlbumListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AlbumListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AlbumListPage.xaml
+
+[C:/DEV/MAUI/JamIT/Views/DiscoverPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JamIT.Views.DiscoverPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DiscoverPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DiscoverPage.xaml
+
+[C:/DEV/MAUI/JamIT/Views/Profile.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JamIT.Views.Profile.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Profile.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Profile.xaml
+
+[C:/DEV/MAUI/JamIT/style.css]
+build_metadata.AdditionalFiles.GenKind = Css
+build_metadata.AdditionalFiles.ManifestResourceName = JamIT.style.css
+build_metadata.AdditionalFiles.TargetPath = style.css
+build_metadata.AdditionalFiles.RelativePath = style.css

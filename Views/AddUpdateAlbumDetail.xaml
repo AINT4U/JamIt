@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="Jam_It_.Views.AddUpdateAlbumDetail" BackgroundColor="#3F3F3F"
+             Title="Create Album">
+    
+    <ContentPage.Resources>
+        <Style x:Key="InvalidEntryStyle" TargetType="Entry">
+            <Setter Property="TextColor" Value="Red" />
+        </Style>
+        <Style x:Key="ValidEntryStyle" TargetType="Entry">
+            <Setter Property="TextColor" Value="Green" />
+        </Style>
+    </ContentPage.Resources>
+    
+    <StackLayout Margin="10" Spacing="20">
+        <ImageButton Source="circle.png" WidthRequest="40" CornerRadius="100" HeightRequest="40" HorizontalOptions="End" Margin="10, 10, 10, -20" Clicked="OnImageButtonClicked"/>
+
+        <VerticalStackLayout Margin="100, 0">
+            <Label HorizontalOptions="Center" FontSize="38" FontAttributes="Bold">Create Album</Label>
+            <Entry FontSize="20" FontAttributes="Bold" Text="{Binding AlbumDetail.Name}" PlaceholderColor="#8319A8"  BackgroundColor="#D9D9D9"
+                       Placeholder="Name*" Margin="0, 10" TextColor="Black"></Entry>
+
+            <Label Text="Release Date" TextColor="#D9D9D9" FontSize="20" FontAttributes="Bold" Margin="0, 10"/>
+            <DatePicker Date="{Binding AlbumDetail.ReleaseDate}" BackgroundColor="#D9D9D9" TextColor="#8319A8" 
+                        FontSize="20" FontAttributes="Bold"/>
+
+            <Label Text="Is Studio-Album" TextColor="#D9D9D9" FontSize="20" FontAttributes="Bold" Margin="0, 20, 0,0"/>
+            <Switch IsToggled="False" />
+
+
+
+            <Button Text="Create Album" Command="{Binding AddUpdateAlbumCommand}" BackgroundColor="#8319A8" TextColor="White" 
+                WidthRequest="150" HorizontalOptions="End" /> 
+        </VerticalStackLayout>
+
+        
+    </StackLayout>
+
+</ContentPage>

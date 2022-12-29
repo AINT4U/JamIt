@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:Jam_It_.ViewModels"
+             xmlns:models="clr-namespace:Jam_It_.Models"
+             x:DataType="viewModels:AlbumListPageViewModel"
+             x:Class="Jam_It_.Views.AlbumListPage"
+             Title="Albums"
+             BackgroundColor="#3F3F3F">
+    <ScrollView>
+
+        <VerticalStackLayout>
+            <ImageButton Source="circle.png" WidthRequest="40" CornerRadius="100" HeightRequest="40" HorizontalOptions="End" Margin="10, 10, 10, -20" Clicked="OnImageButtonClicked"/>
+
+            <Label HorizontalOptions="Center" FontSize="38" FontAttributes="Bold">All Albums</Label>
+
+
+            <Button Text="Add Album" Command="{Binding AddUpdateAlbumCommand}" Margin="20" HorizontalOptions="EndAndExpand"/>
+        <FlexLayout BindableLayout.ItemsSource="{Binding Albums}" Wrap="Wrap">
+            <BindableLayout.ItemTemplate>
+                <DataTemplate x:DataType="models:AlbumModel">
+                        <Grid WidthRequest="208.3"
+                            HeightRequest="300"
+                            Margin="10">
+                            <Frame BackgroundColor="#FF5C00" BorderColor="#FF5C00">
+
+                                <Grid Grid.Row="0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="190"/>
+                                        <RowDefinition Height="40"/>
+                                        <RowDefinition Height="20"/>
+                                    </Grid.RowDefinitions>
+                                    <Image Source="placeholder.png"
+                                        WidthRequest="190"
+                                        HeightRequest="190"
+                                        HorizontalOptions="Center" Grid.Row="0"/>
+
+                                    <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="30" Grid.Row="1" />
+                                    <Label Text="{Binding ReleaseDate}" Grid.Row="2" />
+                                </Grid>
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding Source={x:RelativeSource AncestorType={x:Type viewModels:AlbumListPageViewModel}},
+                                        Path=DisplayActionCommand}" CommandParameter="{Binding .}"/>
+                                </Frame.GestureRecognizers>
+                            </Frame>
+                        </Grid>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </FlexLayout>
+       
+
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

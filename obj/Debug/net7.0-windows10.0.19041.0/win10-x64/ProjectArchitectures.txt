@@ -1,0 +1,1 @@
+C:\DEV\MAUI\JamIT\JamIT.csproj;x64

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="Jam_It_.Views.AlbumDetail" BackgroundColor="#3F3F3F"
+             Title="AlbumDetail">
+
+    <ScrollView>
+
+        <VerticalStackLayout>
+
+            <ImageButton Source="circle.png" WidthRequest="40" CornerRadius="100" HeightRequest="40" HorizontalOptions="End" Margin="10, 10, 10, -20" Clicked="OnImageButtonClicked"/>
+
+
+            <Rectangle Fill="#D9D9D9"
+           WidthRequest="180"
+           HeightRequest="180"
+           HorizontalOptions="Center" Margin="0, 20, 0, 0" />
+            
+            
+            <Label HorizontalOptions="Center" FontSize="38" FontAttributes="Bold">Album 1</Label>
+
+            <FlexLayout FlowDirection="LeftToRight" JustifyContent="SpaceBetween" HorizontalOptions="Center" WidthRequest="400">
+                <Label FlexLayout.AlignSelf="Start" TextColor="#D9D9D9" FontSize="20" FontAttributes="Bold" Text="7 Songs"/>
+                <Ellipse Fill="#D9D9D9" WidthRequest="10" HeightRequest="10" Margin="0, 7, 0, 0"/>
+                <Label FlexLayout.AlignSelf="Center" TextColor="#D9D9D9" FontSize="20" FontAttributes="Bold" Text="2021"/>
+                <Ellipse Fill="#D9D9D9" WidthRequest="10" HeightRequest="10" Margin="0, 7, 0, 0"/>
+                <Label FlexLayout.AlignSelf="End" TextColor="#D9D9D9" FontSize="20" FontAttributes="Bold" Text="Artist Name"/>
+            </FlexLayout>
+
+
+            <ListView x:Name="SongListView"
+              Margin="10"
+              >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <FlexLayout Margin="10, 0, 10, 10" JustifyContent="SpaceBetween" 
+                                        BackgroundColor="#C54AF0" HeightRequest="35"
+                                         HorizontalOptions="Center">
+                                    
+                                <Label Text="{Binding SongName}" FontSize="20" Margin="10, 0"/>
+                                <Label Text="{Binding Duration}" FontSize="20" Margin="10, 0"/>
+                                    
+                            </FlexLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </VerticalStackLayout>
+        
+    </ScrollView>
+
+    
+
+</ContentPage>        

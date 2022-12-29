@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="JamIT.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:JamIT"
+    xmlns:views="clr-namespace:Jam_It_.Views"
+    FlyoutWidth="275"
+    FlyoutBackgroundColor="#8319A8"
+    FlyoutBehavior="Locked"
+    FlyoutHeaderBehavior="CollapseOnScroll"
+    Shell.NavBarIsVisible="False"
+    Shell.TabBarIsVisible="False">
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Title="Home" Icon="home_icon.png" Route="Home"/>
+
+        <ShellContent Title="Discover" ContentTemplate="{DataTemplate views:DiscoverPage}"  Icon="search_icon.png"/>
+
+
+        <ShellContent ContentTemplate="{DataTemplate views:AddUpdateAlbumDetail}" Title="Create Album"  
+                      Icon="plus_icon.png" Route="CreateAlbum" />
+
+        <ShellContent ContentTemplate="{DataTemplate views:AddUpdateSongDetail}" Title="Upload Song"
+                       Icon="upload_icon.png" Route="CreateSong"/>
+
+        <ShellContent ContentTemplate="{DataTemplate views:AlbumListPage}" Title="Albums"
+                       Icon="album_icon.png" Route="AlbumOverview"/>
+
+    </FlyoutItem>
+
+    <FlyoutItem  FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="Album 1" ContentTemplate="{DataTemplate views:AlbumDetail}" />
+    </FlyoutItem>
+
+
+</Shell>    
